@@ -1,0 +1,228 @@
+/* For the full website */
+*{
+    margin: 0px;
+    padding: 0px;
+ 
+}
+/* Header style */
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background:#FFF4E7;
+  }
+  
+  .logo {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 53px;
+    color: #131313;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    margin-right: 60px;
+  }
+  
+  nav a {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+  }
+  /* CSS code for the hero section  */
+ .hero-title{
+    font-size: 105px;
+
+ }
+ .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
+    background:#FFF4E7;
+  }
+  
+  .hero-title {
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 75px;
+    color: #131313;
+    text-align: center;
+  }
+  
+  
+  .hero-text {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400px;
+    color: #727272;
+    text-align: center;
+    width: 800px;
+    margin-top: 40px;
+  }
+  .hero-button { 
+    font-size: 20px;
+    font-weight: 600px;
+    text-align: center;
+    background-color: #FF900E;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    padding: 20px;
+    margin-top: 40px;
+  }
+  .hero-image {
+    display: block;
+    margin: 50px 200px 0px 200px;
+    width: auto;
+    height: auto;
+  }
+
+  /* Fetures section */
+
+.second-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.image-column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 00px;
+    width: 50%;
+}
+
+.image-column img {
+  width: 300px;
+  height: 300px;
+  padding-top: 20px;
+  padding-bottom: 0px;
+}
+
+.text-column {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 50%;
+
+}
+
+.text-column h2 {
+  text-align: left;
+}
+
+.text-column p {
+  text-align: left;
+}
+.feture-title{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.feture-text{
+    font-size: 25px;
+    line-height: 35px;
+}
+
+.text-column button {
+  font-size: 25px;
+  background-color: orange;
+  color: white;
+  display: inline-block;
+  width: 200px;
+  padding: 20px;
+  margin-top: 30px;
+  border: none;
+
+}
+
+
+
+/* footer */
+.footer{
+    background:#FFF4E7;
+    padding: 20px;
+    margin: 10px 200px;
+}
+
+
+
+
+/* For Mobile version */
+  
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+    .hero-section {
+        padding: 50px 20px;
+      }
+      
+      .hero-section h1 {
+        font-size: 24px;
+        width: 100%;
+      }
+      
+      .hero-section p {
+        font-size: 16px;
+        width: 100%;
+      }
+      
+      .hero-button {
+        padding: 10px 20px;
+      }
+      
+      .hero-image {
+        margin: 100px auto;
+        width: 90%;
+        align-items: center;
+      }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    header {
+      padding: 10px;
+    }
+    
+    nav ul {
+      flex-wrap: wrap;
+    }
+    .hero-section {
+        padding: 100px 40px;
+      }
+      
+      .hero-section h1 {
+        font-size: 36px;
+      }
+      
+      .hero-section p {
+        font-size: 20px;
+      }
+      
+      .hero-button {
+        padding: 15px 30px;
+      }
+      
+      .hero-image {
+        margin: 150px auto;
+        width: 90%;
+      }
+    }
+  }
