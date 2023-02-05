@@ -147,17 +147,15 @@ header {
 
 }
 
-
-
 /* footer */
 .footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background:#FFF4E7;
     padding: 20px;
     margin: 10px 200px;
 }
-
-
-
 
 /* For Mobile version */
   
@@ -225,4 +223,3 @@ header {
         width: 90%;
       }
     }
-  }
